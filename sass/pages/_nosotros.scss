@@ -1,0 +1,86 @@
+main.nosotros {
+    padding: 3em 0;
+    h1 {
+        font-size: 3em;
+        margin-bottom: .5em;
+        text-align: center;
+    }
+
+    p {
+        padding: .4em;
+        margin-bottom: 1.5em;
+        
+    }
+
+    .aerea {
+        width: 100%;
+    }
+
+    article {
+        display: flex;
+        margin: 3em 0;
+    }
+
+
+    .contenedor-operarios {
+        display: flex;
+        align-items: center;
+        
+    }
+
+
+    .responsabilidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: .5em;
+        
+        h2 {
+            font-size: 1.5em;
+            padding: 0 0 .2em .3em;    
+        }
+    }
+
+    .contenedor-interior {
+        display: flex;
+        align-items: center;
+        order: 1;
+        
+    }
+
+
+    .orden {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: .5em;
+        
+        h2 {
+            font-size: 1.5em;
+            padding: 0 0 .2em .3em;   
+        }
+    }
+
+    @media (max-width: 768px) {
+        & > article {
+            flex-direction: column;
+        }
+
+        .operarios {
+            width: 100%;
+        }
+
+        .responsabilidad, .orden {
+            margin-top: .3em;
+        }
+
+        .contenedor-interior {
+            order: 0;
+        }
+
+        .interior {
+            width: 100%;   
+        }
+
+    }
+}

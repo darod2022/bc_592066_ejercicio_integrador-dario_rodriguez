@@ -1,0 +1,251 @@
+/***********************************
+             HEADER
+***********************************/
+
+.main-header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toggle__label {
+        background-color: yellow;
+    }
+}
+
+/***********************************
+             NAV BAR
+***********************************/
+
+.nav-bar {
+    background-color: rgb(47, 47, 47);
+
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+
+        @media (max-width: 768px) {
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item {
+        background-color: rgb(47, 47, 47);
+        text-align: center;
+        margin: .4em;
+    }
+
+
+    &__nav-item:hover {
+        background-color: rgb(57, 57, 57);
+        border-left: .06em solid rgb(212, 212, 212);
+        border-right: .06em solid rgb(212, 212, 212);
+    }
+
+
+    &__nav-link {
+        display: block;
+        color: #fff;
+        font-size: 1em;
+        font-weight: lighter;
+        padding: 0.3em 1em;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: none;
+        }
+    }
+
+}
+
+/***********************************
+             SEARCH BAR
+***********************************/
+
+.search-bar {
+    background-color: rgb(242, 242, 242);
+    padding: 2.5em 0 1.1em;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__logo-container,
+    &__form-container {
+        padding: 1em;
+    }
+
+    &__logo-container {
+        background-color: rgb(242, 242, 242);
+        img {
+            height: 4em;
+        }
+
+        @media (max-width: 768px) {
+            & {
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 1em 0 0 1em;
+
+                img {
+                    height: 3em;
+                }
+            }
+        }
+    }
+
+    &__form-container {
+        background-color: rgb(242, 242, 242);
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    &__form-label {
+        display: none;
+    }
+
+    &__form-search {
+        background-color: rgb(210, 210, 210);
+        width: 70%;
+        height: 2.7em;
+        margin: auto 0;
+        outline: none;
+        border: none;
+        border-radius: .7em;
+
+        @media (max-width: 768px) {
+            & {
+                width: 100%;
+                height: 2em;
+                border-radius: .3em;
+            }
+        }
+    }
+
+    &__form-submit {
+        background-color: #F7E371;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 2.7em;
+        margin: auto 0 auto .3em;
+        width: 5em;
+        border: .2em solid #ffbf00;
+        border-radius: .7em;
+
+        @media (max-width: 768px) {
+            & {
+                height: 2em;
+                border-radius: .3em;
+            }
+        }
+    }
+
+    &__form-submit:hover {
+        background-color: #ffbf00;
+        border: .2em solid #F7E371;
+        cursor: pointer;
+    }
+
+
+    &__carrito-container {
+        flex: 0 0 4em;
+        background-color: rgb(242, 242, 242);
+        .carrito {
+            display: inline-block;
+            height: 1.5em;
+            overflow: visible;
+            margin: auto 2.5em auto 0;
+            vertical-align: -3.1em;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &  {
+                .carrito {
+                    margin: auto 1em auto .6em;
+                    vertical-align: -2.9em;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        & {
+            height: 10em;
+        }
+    }
+}
+
+/***********************************
+             MENU TOGGLE
+***********************************/
+.menu-toggle {
+    display: none;
+    background-color: rgb(242, 242, 242);
+    flex: 0 0 2.5em;
+    position: relative;
+    margin-right: 1em;
+    
+
+    &__label {
+        display: block;
+        background-color: rgb(200, 200, 200);
+        height: 38%;
+        margin: 1.9em 0;
+        border: .08em solid rgb(84, 84, 84);
+        border-radius: .5em;
+        cursor: pointer;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        height: .08em;
+        position: absolute;
+        left: .5em;
+        right: .5em;
+    }
+
+    &__top-bread {
+        top: 2.5em;
+    }
+
+    &__meat {
+        top: 50%;
+        
+    }
+
+    &__bottom-bread {
+        bottom: 2.5em;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            display: block
+        }
+        &__label {
+            height: 38%;
+            margin-top: 2em;
+            border-radius: .3em;
+        }
+    }
+
+}

@@ -1,0 +1,148 @@
+main.contacto {
+    padding: 2.5em 0;
+    h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    section {
+        display: flex;
+        margin: 1.8em 0 3em;
+        width: 100vw;
+
+        .redes {
+            padding: 2em;
+            width: 50%;
+
+            h4 {
+                font-size: 1.1em;
+                font-style: italic;
+                margin: .8em 0;
+
+                &:nth-of-type(2) {
+                    margin-top: 2.8em;
+                    
+                }
+            }
+
+            p {
+                margin-left: 3em;
+            }
+
+            .iconos {
+                display: inline-block;
+                font-size: 1em;
+                height: 1em;
+                overflow: visible;
+                
+            }
+
+            .mail {
+                vertical-align: -0.19em;
+            }
+
+            .inst {
+                vertical-align: -0.14em;
+            }
+
+            .face {
+                vertical-align: -0.02em;
+            }
+
+            a {
+                color: rgb(23, 23, 23);
+                text-decoration: none;
+                margin-left: .4em;
+
+                &:hover {
+                    color: rgb(124, 124, 124);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            li {
+                list-style-type: none;
+                margin-left: 3em;
+                margin-bottom: .5em;
+            }
+        }
+
+        form {
+            width: 50%;
+            padding: 2em;
+            
+            .columna {
+                display: flex;
+                flex-direction: column;
+            }
+
+            input, select {
+                width: 70%;
+                height: 2.5em;
+                margin-bottom: 2em;
+
+                &:focus {
+                    border: 2px solid #ffbf00;
+                    background-color: rgb(209, 209, 209);
+                    outline: none;
+                }
+                
+            }
+
+            label {
+                text-transform: uppercase;
+            }
+
+            textarea {
+                width: 70%;
+                height: 14em;
+                resize: vertical;
+                margin-bottom: 2em;
+
+                &:focus {
+                    border: 2px solid #ffbf00;
+                    background-color: rgb(209, 209, 209);
+                    outline: none;
+                }
+            }
+
+            #obligatorio {
+                font-weight: bold;
+                font-size: .9em;
+            }
+
+            button {
+                display: block;
+                border: .13em solid rgb(185, 137, 26);
+                border-radius: .5em;
+                width: 32%;
+                height: 47px;
+                background-color: #ffbf00;
+                color: rgb(26, 26, 26);
+                font-weight: bold;
+                font-size: 1.2em;
+                margin: 2em auto;
+
+                &:hover {
+                    background-color: #fffc3f;
+                    color: rgb(69, 69, 69);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        & > section {
+            flex-direction: column;
+
+            .redes, form {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+}

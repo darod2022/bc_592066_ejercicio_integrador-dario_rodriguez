@@ -19,7 +19,7 @@ body {
   font-family: "Cormorant SC", serif;
 }
 
-main.nosotros p {
+section.nosotros p {
   font-family: "Bree Serif", serif;
 }
 
@@ -255,166 +255,177 @@ main.nosotros p {
   }
 }
 
-main.nosotros {
+section.nosotros {
   padding: 3em 0;
 }
-main.nosotros h1 {
+section.nosotros h1 {
   font-size: 3em;
   margin-bottom: 0.5em;
   text-align: center;
 }
-main.nosotros p {
+section.nosotros p {
   padding: 0.4em;
   margin-bottom: 1.5em;
 }
-main.nosotros .aerea {
+section.nosotros .aerea {
   width: 100%;
 }
-main.nosotros article {
+section.nosotros article {
   display: flex;
   margin: 3em 0;
 }
-main.nosotros .contenedor-operarios {
+section.nosotros .contenedor-operarios {
   display: flex;
   align-items: center;
 }
-main.nosotros .responsabilidad {
+section.nosotros .responsabilidad {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
 }
-main.nosotros .responsabilidad h2 {
+section.nosotros .responsabilidad h2 {
   font-size: 1.5em;
   padding: 0 0 0.2em 0.3em;
 }
-main.nosotros .contenedor-interior {
+section.nosotros .contenedor-interior {
   display: flex;
   align-items: center;
   order: 1;
 }
-main.nosotros .orden {
+section.nosotros .orden {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
 }
-main.nosotros .orden h2 {
+section.nosotros .orden h2 {
   font-size: 1.5em;
   padding: 0 0 0.2em 0.3em;
 }
 @media (max-width: 768px) {
-  main.nosotros > article {
+  section.nosotros > article {
     flex-direction: column;
   }
-  main.nosotros .operarios {
+  section.nosotros .operarios {
     width: 100%;
   }
-  main.nosotros .responsabilidad, main.nosotros .orden {
+  section.nosotros .responsabilidad, section.nosotros .orden {
     margin-top: 0.3em;
   }
-  main.nosotros .contenedor-interior {
+  section.nosotros .contenedor-interior {
     order: 0;
   }
-  main.nosotros .interior {
+  section.nosotros .interior {
     width: 100%;
   }
 }
 
-main.contacto {
+div.contacto {
   padding: 2.5em 0;
 }
-main.contacto h1 {
+div.contacto h1 {
   font-size: 2.5em;
   text-align: center;
 }
-main.contacto section {
+div.contacto section {
   display: flex;
-  margin: 1.8em 0 3em;
+  margin: 1.8em 0 0;
   width: 100vw;
 }
-main.contacto section .redes {
+div.contacto section .redes {
   padding: 2em;
   width: 50%;
 }
-main.contacto section .redes h4 {
+div.contacto section .redes h4 {
   font-size: 1.1em;
   font-style: italic;
   margin: 0.8em 0;
 }
-main.contacto section .redes h4:nth-of-type(2) {
+div.contacto section .redes h4:nth-of-type(2) {
   margin-top: 2.8em;
 }
-main.contacto section .redes p {
+div.contacto section .redes p {
   margin-left: 3em;
 }
-main.contacto section .redes .iconos {
+div.contacto section .redes .iconos {
   display: inline-block;
   font-size: 1em;
-  height: 1em;
   overflow: visible;
 }
-main.contacto section .redes .mail {
+div.contacto section .redes .mail {
+  vertical-align: -0.4em;
+  height: 1.4em;
+}
+div.contacto section .redes .inst {
+  vertical-align: -0.17em;
+  height: 1em;
+}
+div.contacto section .redes .face {
   vertical-align: -0.19em;
+  height: 1.2em;
 }
-main.contacto section .redes .inst {
-  vertical-align: -0.14em;
-}
-main.contacto section .redes .face {
-  vertical-align: -0.02em;
-}
-main.contacto section .redes a {
+div.contacto section .redes a {
   color: rgb(23, 23, 23);
   text-decoration: none;
   margin-left: 0.4em;
 }
-main.contacto section .redes a:hover {
+div.contacto section .redes a:hover {
   color: rgb(124, 124, 124);
   text-decoration: underline;
   cursor: pointer;
 }
-main.contacto section .redes li {
+div.contacto section .redes li {
   list-style-type: none;
   margin-left: 3em;
   margin-bottom: 0.5em;
 }
-main.contacto section form {
+div.contacto section #form_contacto {
   width: 50%;
-  padding: 2em;
+  padding: 0 2em 2em 2em;
 }
-main.contacto section form .columna {
+div.contacto section #form_contacto .columna {
   display: flex;
   flex-direction: column;
 }
-main.contacto section form input, main.contacto section form select {
+div.contacto section #form_contacto input, div.contacto section #form_contacto select {
   width: 70%;
   height: 2.5em;
-  margin-bottom: 2em;
 }
-main.contacto section form input:focus, main.contacto section form select:focus {
+div.contacto section #form_contacto input:focus, div.contacto section #form_contacto select:focus {
   border: 2px solid #ffbf00;
   background-color: rgb(209, 209, 209);
   outline: none;
 }
-main.contacto section form label {
+div.contacto section #form_contacto label {
   text-transform: uppercase;
+  margin-top: 2em;
 }
-main.contacto section form textarea {
+div.contacto section #form_contacto textarea {
   width: 70%;
   height: 14em;
   resize: vertical;
-  margin-bottom: 2em;
 }
-main.contacto section form textarea:focus {
+div.contacto section #form_contacto textarea:focus {
   border: 2px solid #ffbf00;
   background-color: rgb(209, 209, 209);
   outline: none;
 }
-main.contacto section form #obligatorio {
+div.contacto section #form_contacto .advertencia {
+  border: 1px solid rgb(249, 0, 0);
+  background-color: rgb(243, 218, 76);
+  color: rgb(79, 0, 0);
+  padding: 0.2em 0;
+  text-align: center;
+  width: 70%;
+  display: none;
+}
+div.contacto section #form_contacto #obligatorio {
   font-weight: bold;
   font-size: 0.9em;
+  margin-top: 2.2em;
 }
-main.contacto section form button {
+div.contacto section #form_contacto button {
   display: block;
   border: 0.13em solid rgb(185, 137, 26);
   border-radius: 0.5em;
@@ -424,24 +435,43 @@ main.contacto section form button {
   color: rgb(26, 26, 26);
   font-weight: bold;
   font-size: 1.2em;
-  margin: 2em auto;
+  margin: 2em auto 0;
 }
-main.contacto section form button:hover {
+div.contacto section #form_contacto button:hover {
   background-color: #fffc3f;
   color: rgb(69, 69, 69);
   cursor: pointer;
 }
+div.contacto section #form_contacto button:disabled {
+  background-color: rgb(194, 194, 194);
+  color: rgb(146, 146, 146);
+  border: 0.13em solid rgb(176, 176, 176);
+  cursor: default;
+}
+div.contacto .mensaje-form {
+  height: 1.2em;
+  width: 30em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0 auto 4em;
+}
+div.contacto .mensaje-form p {
+  padding: 0.4em;
+}
 @media (max-width: 768px) {
-  main.contacto > section {
+  div.contacto > section {
     flex-direction: column;
   }
-  main.contacto > section .redes, main.contacto > section form {
+  div.contacto > section .redes, div.contacto > section #form_contacto {
     width: 100%;
   }
 }
 
 .card {
   outline: none;
+  border: 2px solid rgb(163, 163, 163);
   flex-grow: 1;
   width: 220px;
   max-width: 300px;
@@ -518,4 +548,286 @@ main.contacto section form button:hover {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
+}
+
+.container-alta {
+  padding: 2.5em 2em;
+}
+.container-alta h1, .container-alta h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+.container-alta h2 {
+  color: rgb(255, 158, 48);
+}
+.container-alta form {
+  margin: 0 auto 2em;
+  width: 40%;
+  padding: 2em;
+}
+.container-alta form .columna {
+  display: flex;
+  flex-direction: column;
+}
+.container-alta form label {
+  text-transform: uppercase;
+  margin-top: 2em;
+}
+.container-alta form input {
+  width: 100%;
+  height: 2.5em;
+}
+.container-alta form input:focus {
+  border: 2px solid #ffbf00;
+  background-color: rgb(209, 209, 209);
+  outline: none;
+}
+.container-alta form input[type=checkbox] {
+  display: inline;
+  width: 15px;
+  height: 15px;
+  margin-top: 2em;
+}
+.container-alta form .advertencia {
+  border: 1px solid rgb(249, 0, 0);
+  background-color: rgb(243, 218, 76);
+  color: rgb(79, 0, 0);
+  padding: 0.2em 0;
+  text-align: center;
+  display: none;
+}
+.container-alta form button {
+  display: block;
+  border: 0.13em solid rgb(40, 151, 0);
+  border-radius: 0.5em;
+  width: 30%;
+  height: 35px;
+  background-color: #00d70e;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 1.3em auto;
+}
+.container-alta form button:hover {
+  background-color: #6cff3f;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+}
+.container-alta form button:disabled {
+  background-color: rgb(240, 240, 240);
+  color: rgb(194, 194, 194);
+  border: 0.13em solid rgb(230, 230, 230);
+  cursor: default;
+}
+.container-alta hr {
+  border: 3px solid rgb(255, 128, 0);
+  margin-bottom: 2.5em;
+}
+.container-alta #listado-productos {
+  width: 100%;
+}
+.container-alta table, .container-alta th, .container-alta td {
+  border: 2px solid rgb(84, 84, 84);
+  border-collapse: collapse;
+}
+.container-alta table {
+  width: 90%;
+  margin: 2em auto;
+}
+.container-alta table th {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  background-color: #ffe597;
+}
+.container-alta table td {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  padding: 0.3em;
+  text-align: center;
+}
+.container-alta .actualizar {
+  display: block;
+  border: 0.1em solid rgb(0, 29, 135);
+  border-radius: 0.4em;
+  width: 6em;
+  height: 1.5em;
+  background-color: #000ed7;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 0 auto;
+  text-align: center;
+}
+.container-alta .actualizar:hover {
+  background-color: #3f7fff;
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+.container-alta .actualizar:disabled {
+  background-color: rgb(240, 240, 240);
+  color: rgb(194, 194, 194);
+  border: 0.1em solid rgb(230, 230, 230);
+  cursor: default;
+}
+.container-alta .borrar {
+  display: block;
+  border: 0.1em solid rgb(165, 2, 2);
+  border-radius: 0.4em;
+  width: 4.3em;
+  height: 1.5em;
+  background-color: #f40303;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 0 auto;
+  text-align: center;
+}
+.container-alta .borrar:hover {
+  background-color: #ff7d7d;
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+.section-carrito {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7294117647);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.section-carrito--visible {
+  display: block;
+}
+.section-carrito .section-carrito-card {
+  display: block;
+  position: absolute;
+  background-color: #f1f2f3;
+  top: 7vw;
+  left: 15vw;
+  right: 15vw;
+  bottom: 7vw;
+  padding: 2em;
+}
+.section-carrito .section-carrito-card .cruz {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.8em;
+  width: 2.8em;
+  height: 1.8em;
+  background-color: #c6c6c6;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.section-carrito .section-carrito-card .cruz:hover {
+  background-color: #f40303;
+  color: white;
+  font-weight: lighter;
+  cursor: default;
+}
+.section-carrito .section-carrito-card .sub-section {
+  overflow-y: scroll;
+  position: absolute;
+  top: 2em;
+  right: 1px;
+  bottom: 3em;
+  left: 2em;
+}
+.section-carrito .section-carrito-card table, .section-carrito .section-carrito-card th, .section-carrito .section-carrito-card td {
+  border: 2px solid rgb(175, 175, 175);
+  border-collapse: collapse;
+}
+.section-carrito .section-carrito-card table {
+  width: 80%;
+  margin: 1em 6em 1em 4em;
+}
+.section-carrito .section-carrito-card table th {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 0.3em;
+  text-align: center;
+  background-color: #ffe597;
+}
+.section-carrito .section-carrito-card table td {
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0.3em;
+  text-align: center;
+  background-color: white;
+}
+.section-carrito .section-carrito-card table td .borrar2 {
+  display: block;
+  border: 0.1em solid rgb(165, 2, 2);
+  border-radius: 0.4em;
+  width: 5em;
+  height: 1.5em;
+  background-color: #f40303;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  font-size: 1em;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-carrito .section-carrito-card table td .borrar2:hover {
+  background-color: #ff7d7d;
+  color: rgb(230, 230, 230);
+  cursor: pointer;
+}
+.section-carrito .section-carrito-card .btn__enviarCarrito {
+  position: absolute;
+  bottom: 1em;
+  right: 1.5em;
+  display: block;
+  border: 0.1em solid rgb(15, 142, 4);
+  border-radius: 0.4em;
+  width: 5em;
+  height: 1.5em;
+  background-color: #1ac60a;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+.section-carrito .section-carrito-card .btn__enviarCarrito:hover {
+  background-color: #7dff86;
+  color: rgb(71, 71, 71);
+  cursor: pointer;
+}
+.section-carrito .section-carrito-card .btn__enviarCarrito:disabled {
+  background-color: rgb(194, 194, 194);
+  color: rgb(146, 146, 146);
+  border: 0.1em solid rgb(176, 176, 176);
+  cursor: default;
+}
+.section-carrito .section-carrito-card h2 {
+  text-align: center;
+  line-height: 200px;
+  font-style: italic;
+}
+.section-carrito .section-carrito-card .cantidad-productos {
+  margin: 3em 0 1em;
+  font-size: 0.8em;
+}
+.section-carrito .section-carrito-card .cantidad-productos span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.section-carrito .section-carrito-card .monto-carrito {
+  margin: 1em 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-style: italic;
+}
+.section-carrito .section-carrito-card .monto-carrito span {
+  font-size: 1.1em;
+}
+
+.active {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

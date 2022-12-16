@@ -1,4 +1,4 @@
-main.contacto {
+div.contacto {
     padding: 2.5em 0;
     h1 {
         font-size: 2.5em;
@@ -7,12 +7,14 @@ main.contacto {
 
     section {
         display: flex;
-        margin: 1.8em 0 3em;
+        margin: 1.8em 0 0;
         width: 100vw;
+        
 
         .redes {
             padding: 2em;
             width: 50%;
+            
 
             h4 {
                 font-size: 1.1em;
@@ -32,21 +34,24 @@ main.contacto {
             .iconos {
                 display: inline-block;
                 font-size: 1em;
-                height: 1em;
+                
                 overflow: visible;
                 
             }
 
             .mail {
-                vertical-align: -0.19em;
+                vertical-align: -0.4em;
+                height: 1.4em;
             }
 
             .inst {
-                vertical-align: -0.14em;
+                vertical-align: -0.17em;
+                height: 1em;
             }
 
             .face {
-                vertical-align: -0.02em;
+                vertical-align: -0.19em;
+                height: 1.2em;
             }
 
             a {
@@ -68,9 +73,11 @@ main.contacto {
             }
         }
 
-        form {
+
+        #form_contacto {
             width: 50%;
-            padding: 2em;
+            padding: 0 2em 2em 2em;
+            
             
             .columna {
                 display: flex;
@@ -80,7 +87,6 @@ main.contacto {
             input, select {
                 width: 70%;
                 height: 2.5em;
-                margin-bottom: 2em;
 
                 &:focus {
                     border: 2px solid #ffbf00;
@@ -92,13 +98,13 @@ main.contacto {
 
             label {
                 text-transform: uppercase;
+                margin-top: 2em;
             }
 
             textarea {
                 width: 70%;
                 height: 14em;
                 resize: vertical;
-                margin-bottom: 2em;
 
                 &:focus {
                     border: 2px solid #ffbf00;
@@ -107,9 +113,20 @@ main.contacto {
                 }
             }
 
+            .advertencia {
+                border: 1px solid rgb(249, 0, 0);
+                background-color: rgb(243, 218, 76);
+                color: rgb(79, 0, 0);
+                padding: 0.2em 0;
+                text-align: center;
+                width: 70%;
+                display: none;
+            }
+
             #obligatorio {
                 font-weight: bold;
                 font-size: .9em;
+                margin-top: 2.2em;
             }
 
             button {
@@ -122,22 +139,43 @@ main.contacto {
                 color: rgb(26, 26, 26);
                 font-weight: bold;
                 font-size: 1.2em;
-                margin: 2em auto;
+                margin: 2em auto 0;
 
                 &:hover {
                     background-color: #fffc3f;
                     color: rgb(69, 69, 69);
                     cursor: pointer;
                 }
+                &:disabled {
+                    background-color: rgb(194, 194, 194);
+                    color: rgb(146, 146, 146);
+                    border: .13em solid rgb(176, 176, 176);
+                    cursor: default;
+                }
             }
         }
     }
+
+    .mensaje-form {
+        height: 1.2em;
+        width: 30em;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin: 0 auto 4em;
+
+        p {
+            padding: .4em;
+        }
+    }
+
 
     @media (max-width: 768px) {
         & > section {
             flex-direction: column;
 
-            .redes, form {
+            .redes, #form_contacto {
                 width: 100%;
             }
         }

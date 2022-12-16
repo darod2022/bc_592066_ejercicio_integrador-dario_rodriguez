@@ -14,16 +14,16 @@
       <nav class="nav-bar">
         <ul class="nav-bar__nav-list">
           <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link"> Inicio </a>
+            <a href="" id="inicio" class="nav-bar__nav-link">Inicio</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link"> Alta </a>
+            <a href="" id="alta" class="nav-bar__nav-link">Alta</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="contacto.html" class="nav-bar__nav-link"> Contacto </a>
+            <a href="" id="contacto" class="nav-bar__nav-link">Contacto</a>
           </li>
           <li class="nav-bar__nav-item">
-            <a href="nosotros.html" class="nav-bar__nav-link"> Nosotros </a>
+            <a href="" id="nosotros" class="nav-bar__nav-link">Nosotros</a>
           </li>
         </ul>
       </nav>
@@ -48,223 +48,41 @@
       <!-- search-bar -->
     </header>
     <!-- <header> -->
-    <main>
-      <section class="section-cards">
-        <header class="section-cards__header">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>Se encontraron X productos</p>
-        </header>
 
-        <div class="cards-container">
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/apple-iphone-11-pro-max.jpg"
-                  alt="IPhone 11 Pro Max"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Smartphone iPhone 11</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <div class="section-carrito"></div>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/auriculares-sony.jpg"
-                  alt="Auriculares Sony"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Auriculares Sony</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <main></main>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/camara-canon.jpg"
-                  alt="Camara Fotografica Canon"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Cámara Digital Canon</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <footer></footer>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/celular-samsung.jpg"
-                  alt="Celular Samsung"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Smartphone Samsung</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/apple-iphone-12.jpg"
-                  alt="IPhone 12"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Smartphone iPhone 12</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <!-- Código de librerías -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    
+    <!-- código de los clientes http  -->
+    <script src="js/clientes/http.client.js"></script>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/chromecast-google.jpg"
-                  alt="Google Chromecast"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Google Chromecast</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <!-- Servicios -->
+    <script src="js/servicios/productos.js"></script>
+    <script src="js/servicios/carrito.js"></script>
+    <script src="js/servicios/contacto.js"></script>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/notebook-lenovo.jpg"
-                  alt="Notebook Lenovo"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Notebook Lenovo</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <!-- Modelos -->
+    <script src="js/modelos/productos.js"></script>
+    <script src="js/modelos/carrito.js"></script>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/parlante-jbl.jpg"
-                  alt="Parlante JBL"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Parlante JBL</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
+    <!-- Controladores -->
+    <script src="js/controladores/productos.js"></script>
+    <script src="js/controladores/carrito.js"></script>
 
-          <a href="#" class="card">
-            <article class="card__article">
-              <div class="card__image-container">
-                <img
-                  class="card__image"
-                  src="img/productos/drone-dji.jpg"
-                  alt="Drone DJI"
-                />
-              </div>
-              <div class="card__content">
-                <h2 class="card__heading">Drone</h2>
-                <div class="card__description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Odit deleniti consequuntur inventore minus ea consequatur
-                    omnis. Eaque repudiandae amet ad!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </a>
-          <!-- .card -->
-        </div>
-        <!-- cards-container -->
-      </section>
-      <!-- section-cards -->
-    </main>
+    <!-- Menúes -->
+    <script src="js/menu/alta.js"></script>
+    <script src="js/menu/nosotros.js"></script>
+    <script src="js/menu/contacto.js"></script>
+    <script src="js/menu/inicio.js"></script>
+    <script src="js/menu/carrito.js"></script>
+        
+    <!-- Código de arranque -->
+    <script src="js/main.js"></script>
+
   </body>
 </html>

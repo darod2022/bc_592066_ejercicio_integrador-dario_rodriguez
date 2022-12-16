@@ -1,0 +1,49 @@
+<div class="section-carrito-card">
+    <div class="cruz" onclick="cerrarConCruz()">X</div>
+    {{#if carrito.length }}
+        <div class="sub-section">
+            <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Marca</th>
+                        <th>Foto</th>
+                        <th>Cantidad</th>
+                        <th>Envío</th>
+                        <th>Acción</th>
+                    </tr>
+
+                {{#each carrito}}
+                    <tr>
+                        <td>{{nombre}}</td>
+                        <td>$ {{precio}}</td>
+                        <td>{{marca}}</td>
+                        <td>
+                             <img style="display:block; margin: 0 auto;" src="{{foto}}" width="50" alt="{{nombre}}">
+                        </td>
+                        <td>{{cantidad}}</td>
+            
+                    {{#if envio}}
+                        <td style="color: rgb(14, 193, 14);">SI</td>
+                    {{else}}
+                        <td style="color: red;">NO</td>
+                    {{/if}}
+            
+                        <td>
+                            <button class="borrar2" onclick="carritoController.borrarProductoCarrito({{id}})">Borrar</button>
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+            <p class="cantidad-productos">Cantidad de artículos en el carrito: <span></span></p>
+            <p class="monto-carrito">Monto total a pagar:<span></span></p>
+    
+        </div>
+        <button class="btn__enviarCarrito" onclick="carritoController.enviarCarrito()">Enviar</button>
+    
+    {{else}}
+        <h2>El carrito está vacío</h2>
+    {{/if}}
+</div>
+
+

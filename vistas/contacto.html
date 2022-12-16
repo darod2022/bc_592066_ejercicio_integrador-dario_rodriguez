@@ -1,0 +1,57 @@
+<div class="contacto">
+    <h1>Contacto</h1>
+    <section>
+        <div class="redes">
+          <h4>Para soporte técnico:</h4>
+          <p><img class="iconos mail" src="img/logos-redes/correo.png" alt="Logo de e-mail"><a href="#">soporte-tecnico@ambar.com.ar</a></p>
+          <h4>Seguinos en nuestras redes sociales:</h4>
+          <ul>
+            <li><img class="iconos inst" src="img/logos-redes/instagram.png" alt="Logo de Instagram"><a href="#">Instagram</a></li>
+            <li><img class="iconos face" src="img/logos-redes/facebook.png" alt="Logo de Facebook"><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+        
+        <form id="form_contacto">
+            <div class="columna">
+                <label for="nombre">Nombre:<sup>*</sup></label>
+                <input type="text" name="nombre" id="nombre" required>
+                <div class="advertencia"></div>
+            </div>
+
+            <div class="columna">
+                <label for="apellido">Apellido:<sup>*</sup></label>
+                <input type="text" name="apellido" id="apellido" required>
+                <div class="advertencia"></div>
+            </div>
+            <div class="columna">
+                <label for="pais">Pais:<sup>*</sup></label>
+                <select id="pais" name="pais" required>
+                    <option value="">- Seleccionar -</option> 
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="chile">Chile</option>
+                    <option value="paraguay">Paraguay</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div class="columna">
+                <label for="correo">Dirección de correo electrónico:<sup>*</sup></label>
+                <input name='correo' type='email' placeholder="Ej: mail@gmail.com" required>
+                <div class="advertencia"></div>
+            </div>
+            <div class="columna">
+                <label for="telefono">Teléfono:<sup>*</sup></label>
+                <input name='telefono' type='tel' placeholder="Código de área y número">
+                <div class="advertencia"></div>
+            </div>
+            <div class="columna">
+                <label for="mensaje">Escribinos tu mensaje<sup>*</sup></label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+                <div class="advertencia"></div>
+            </div>
+            <p id="obligatorio">*: campo obligatorio</p>
+            <button>Enviar</button>
+        </form>
+    </section>
+    <div class="mensaje-form"></div>
+</div>
